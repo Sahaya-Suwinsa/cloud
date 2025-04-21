@@ -93,7 +93,7 @@
         try {
             const docRef = await addDoc(collection(db, 'users'), userData);
             console.log('User document written with ID:', docRef.id);
-            document.location.replace("login.html")
+            document.location.replace("index.html")
         } catch (error) {
             console.error('Error adding user document:', error.message);
             console.error('Error details:', error);
